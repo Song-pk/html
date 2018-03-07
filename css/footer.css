@@ -1,0 +1,29 @@
+footer {
+    display: flex; 
+    justify-content: space-between; /* 각 플렉스 항목간에 동일한 간격(space)를 유지한다 ex) ㅁ ㅁ ㅁ ㅁ*/
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 900px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 55px; /* 아래쪽의 여백 55 */
+}
+
+footer .footer__list {
+    display: flex; /* 수평축을 따라 알아서 정렬 결국 가로로 쭉나옴 */
+}
+
+.footer__list .footer__item {
+    margin-right: 10px; /* 오른쪽의 여백을 줍니다. */
+}
+
+.footer__item .footer__link {
+    color: #003569;
+}
+
+footer .footer__copyright {
+    color: #999;
+}
