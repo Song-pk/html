@@ -60,14 +60,20 @@
   margin-top: 10px;
   width: 100%; /*username password 폭을 조절 */
 }
+.login__box .login__form1 {
+  margin-top: 10px;
+
+}
 
 .login__form input { /* usrtname password 박스크키와 간격 글씨 크기 바꾸는것 */
   box-sizing: border-box;
   display: block;
   width: 100%;
-  padding: 10px 7px 7px 7px;
+  padding: 10px 7px 10px 7px;
+  margin-bottom: 10px;
   font-size: 14px;
-  border: 1px solid #efefef;
+  background-color: #fafafa; /* 상자 안에 색 변경 */
+  border: 1px solid #efefef; /* 태두리 색 변경*/
   border-radius: 3px; /* 상자의 모서리부분 둥글게 하는 것 */
 }
 
@@ -92,6 +98,7 @@
   padding: 7px;
   cursor: pointer; /* 마우스 커서 올리면 손가락 모양으로 바뀜 */
 }
+
 
 input[type="submit"] {
   border: 0;
