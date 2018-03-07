@@ -1,6 +1,6 @@
 footer {
     display: flex; 
-    justify-content: space-between; /* 각 플렉스 항목간에 동일한 간격(space)를 유지한다 ex) ㅁ ㅁ ㅁ ㅁ*/
+    justify-content: space-between; /* 각 플렉스 항목간에 동일한 간격(space)를 유지한다 ex) ㅁ ㅁ ㅁ ㅁ */
     align-items: center;
     width: 90%;
     margin: 0 auto;

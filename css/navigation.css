@@ -1,0 +1,58 @@
+.navigation {
+    background: white;
+    border-bottom: 1px solid rgba(0, 0, 0, .0975); /* 밑줄 그어주는 것*/
+    height: 80px; /*폭을 넓힌다*/
+    display: flex;
+    align-items: center; /* 모든 것을 가운데 정렬 */
+    justify-content: space-between; /* 각 플렉스 항목간에 동일한 간격(space)를 유지한다 ex) ㅁ ㅁ ㅁ ㅁ */
+    padding: 0 40px; /* 왼족에 간격을 두는 것*/
+}
+
+.navigation input {
+    width: 215px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border: 0;
+    border: solid 1px #dbdbdb; /* 상자를 만들어준다. */
+    border-radius: 3px;
+    background: #fafafa;
+    font-size: 14px;
+}
+
+.navigation input:focus {
+    outline: none;
+    background: white;
+}
+
+.navigation .navigation__links { /* 오른쪽 상단에 가운데로 붙는다 */
+    display: flex; 
+    justify-content: flex-end;
+}
+
+.navigation__links .navigation__link {
+    font-size: 23px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: right;
+    margin-left: 20px; 
+    animation: .5s drop ease-out forwards;
+    opacity: 0; /* 값을 사라지게 만듬 설정을하면 떨어지는게 만들려고 하는 거*/
+}
+
+/* 이 밑에는 다같이 써야 실행이 됩니다. opacity 설정이 되어있기 때문에 아무것도 안보이게 됩니다.*/
+.navigation__links .navigation__links:nth-child(2) {
+    animation-delay: .5s;
+}
+
+.navigation__links .navigation__links:last-child {
+    animation-delay: 1s;
+}
+
+@keyframes drop {
+    from {
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}

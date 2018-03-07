@@ -14,6 +14,8 @@
 
 #login .login__column img {
   max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .login__column .login__box {
@@ -59,10 +61,6 @@
 .login__box .login__form {
   margin-top: 10px;
   width: 100%; /*username password 폭을 조절 */
-}
-.login__box .login__form1 {
-  margin-top: 10px;
-
 }
 
 .login__form input { /* usrtname password 박스크키와 간격 글씨 크기 바꾸는것 */
