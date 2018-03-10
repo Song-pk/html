@@ -1,0 +1,93 @@
+#explore { /* 기본 설정 값*/
+    display: flex;
+    justify-content: center;
+}
+
+.explore__users {
+
+}
+
+.explore__users .explore__user {
+    padding: 10px 15px;
+    box-sizing: border-box;
+    display: flex; /* 이 개념을 좀 알아두는게 좋을 것같아서 위 아래로 되어있는걸 옆으로 가게 할때는 반드시 써야됨 */
+    align-items: center; /* follow 글씨크기만큼 줄여 */
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.975); /* 아래쪽에 줄을 그어 */
+}
+
+.explore__users .explore__user:last-child {
+    border: 0; /*상자에 줄이없어지게 하는것*/
+}
+
+.explore__user .explore__content { /* DEMANOR The Moment 글씨를 처음꺼는 위아래로 되어있는걸 옆으로 두번째꺼는 글씨를 가운데로 */
+    display: flex;
+    align-items: center;
+  }
+
+.explore__user .explore__content img { 
+  width: 56px; /* 이미지의 크기를 줄여 */
+  height: 56px; /* 이미지의 크기를 줄여 */
+  border-radius: 50%; /* 둥글게 만들어 */
+  margin-right: 15px; /* 오른쪽 간격을 둠 */
+  transform-style: preserve-3d;
+  animation: 6s potato infinite ease-in-out;
+  }
+
+@keyframes horse { /* 밑에 꺼랑 합쳐서 써야됨 360도 돌아가는 기능 */
+  to {
+    transform: none;
+  }
+  from {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes potato { /* 필요없는 기능 */
+    0% {
+      transform: none;
+    }
+    50% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      transform: none;
+    }
+}
+
+.explore__info .explore__username { /* DMEANOR 글씨를 바꿔주는 것*/
+  display: block; /* 한줄로 나왔던 글씨를 위아래로 바꿔줌 */
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.explore__info .explore__full-name { /* The Moment 글씨 색을 바꿔주는 것 */
+    color: #999;
+}
+
+.explore__user button { /* 상자의 값을 바꿔주는 것*/
+  border: 1px solid #3897f0;
+  border-radius: 3px; /* 둥글게 */
+  color: white;
+  font-weight: 600;
+  background: #3897f0;
+  padding: 5px 15px; /* 상자크기를 처음은 위로 커지고 두번째는 옆으로 커지고 */
+  font-size: 14px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+ }
+
+.explore__user button:hover { /* 마우스를 갖다대면 색이 변함 */
+  background: white;
+  color: #3897f0;
+}
+
+.explore__user button:focus {
+  outline: none;
+}
+
+.explore__user button:active {
+  opacity: 0.5;
+}
+
+

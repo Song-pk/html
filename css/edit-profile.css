@@ -1,0 +1,41 @@
+#edit-profile {
+  display: flex;
+  justify-content: center;
+}
+
+.edit-profile__header {
+  display: flex;
+  align-items: center;
+}
+
+.edit-profile__header img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+
+.edit-profile__header .edit-container { /* 이미지 */
+  margin-right: 20px; /*오른쪽으로 간격을 둠 */
+  width: 120px;
+  display: flex;
+  justify-content: flex-end; /* 끝에 쪽으로 맞춰서 간격을 둠 */
+  margin-bottom: 10px;
+}
+
+.edit-profile__container { /* 자세히는 모르겠지만 프로필과 글씨 위쪽에 간격을 두는 것 같음 */
+  padding: 35px;
+  box-sizing: border-box;
+}
+
+.edit-profile__row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.edit-profile__row .edit-profile__label { /* 이름이랑 디미너의 사이의 간격을 두는 것같음 */
+  width: 120px;
+  text-align: right;
+  margin-right: 20px;
+  margin-bottom: 10px; /* margin-bottom은 내가 다해놓은 것*/
+}

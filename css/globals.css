@@ -1,0 +1,46 @@
+body { /* explore에 들어가는 값 DMEANOR The Moment 글씨를 바꿔줌  */
+    background: #fafafa;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+      Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+}
+
+a { /* 아마값을 다 정해주는 것 같긴한데.. 자세히는 잘 모르겠고 링크의 줄을 없애줌 */
+  text-decoration: none;
+}
+
+main { /* 모든 메인 위에 간격을 띄워줌 */
+  margin: 60px 0;
+  animation: .5s popIn ease-out;
+}
+
+
+@keyframes popIn { /* 잘 모르겠는데 그냥 하더라고.. */
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.u-default-box { /* 사람 얼굴 나오는것에 상자 뿐만아니라 모든 것에 상자가 생김 */
+  width: 100%; /*상자를 100% 가로로 끝까지 표현됨 */
+  max-width: 600px; /*그걸 max값을 줘서 최대한 600정도만 하게 만듬*/
+  background: white; /* 색을 칠하고 */
+  border: 1px solid rgba(0, 0, 0, .0975); /* 줄을 그어서 */
+  border-radius: 3px; /* 상자를 둥글게 */
+}
+
+.u-default-box1 { /* 내가 만든 것 */
+  width: 100%; /*상자를 100% 가로로 끝까지 표현됨 */
+  height: 100%;
+  max-width: 935px; /*그걸 max값을 줘서 최대한 600정도만 하게 만듬*/
+  max-height: 600px;
+  background: white; /* 색을 칠하고 */
+  border: 1px solid rgba(0, 0, 0, .0975); /* 줄을 그어서 */
+  border-radius: 3px; /* 상자를 둥글게 */
+}
+

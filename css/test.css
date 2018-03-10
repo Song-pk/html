@@ -1,14 +1,22 @@
-#feed { /* 기본 설정 값*/
+#detail {
+    width: 90%;
+    margin-left: auto; /* 모든 값의 왼쪽에 공간을 둠 */
+    margin-right: auto;
+    max-width: 1000px; /* 왼쪽에 공간을 더 많이 둠 */
+    font-size: 16px;
+}
+
+#detail { /* 기본 설정 값*/
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.photo {
+.detail {
     margin-bottom: 60px;
 }
 
-.photo .photo__header {
+.detail .detail__header {
     padding: 15px;
     box-sizing: border-box;
     display: flex;
@@ -16,57 +24,57 @@
     font-weight: 600;
 }
 
-.photo__header img {
+.detail__header img {
     width: 30px;
     height: 30px;
     border-radius: 50%; /* 태두리 둥글게 */
     margin-right: 10px;
 }
 
-.photo img {
+.detail img {
     max-width: 100%;
 }
 
-.photo__info {
+.detail__info {
     padding: 18px;
     padding-bottom: 0;
     box-sizing: border-box;
 }
 
-.photo__info .photo__actions { /* 하트 */
+.detail__info .detail__actions { /* 하트 */
     font-size: 24px;
     display: flex;
     margin-bottom: 10px;
 }
 
-.photo__actions .photo__action { /* 말풍선 */
+.detail__actions .detail__action { /* 말풍선 */
     margin-right: 15px;
     display: block;
     cursor: pointer;
 
 }
 
-.photo__info .photo__likes { /* 1,217 글씨 */
+.detail__info .detail__likes { /* 1,217 글씨 */
     font-weight: 600;
     margin-bottom: 15px;
     display: block;
 }
 
-.photo__comment .photo__comment-author {
+.detail__comment .detail__comment-author {
     font-weight: 600;
 }
 
-.photo__comments .photo__comment {
+.detail__comments .detail__comment {
     margin-bottom: 10px;
 }
 
-.photo__info .photo__date { /* 1 hour age */
+.detail__info .detail__date { /* 1 hour age */
     text-transform: uppercase;
     font-size: 10px;
     color: #999;
 }
 
-.photo__info .photo__add-comment-container {
+.detail__info .detail__add-comment-container {
     margin-top: 15px;
     width: 100%;
     border-top: 1px solid rgba(0, 0, 0, .0975);
@@ -76,7 +84,7 @@
     flex-shrink: 0;
 }
 
-.photo__add-comment-container textarea {
+.detail__add-comment-container textarea {
   padding: 16px 0;
   border: 0;
   resize: none;
@@ -85,11 +93,11 @@
   font-size: 14px;
 }
 
-.photo__add-comment-container textarea:focus { /* 전체를 가운데로 */
+.detail__add-comment-container textarea:focus { /* 전체를 가운데로 */
     outline: none;
 }
 
-.photo__add-comment-container i {
+.detail__add-comment-container i {
     cursor: pointer;
 }
 
