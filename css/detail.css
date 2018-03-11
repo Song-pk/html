@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 50px;
 }
 
 .detail {
@@ -15,6 +16,7 @@
     font-weight: 600;
 
 }
+
 
 .detail__header img {
     width: 40px;
@@ -40,6 +42,7 @@
 
 
 .detail__info {
+    width: 100%;
     padding: 18px;
     padding-bottom: 0;
     box-sizing: border-box;
@@ -108,4 +111,9 @@
 .heart-clicked {
     color: red;
     animation: .5s pump infinite linear;
+}
+
+
+.detail__end {
+    margin-bottom: 100px;
 }
